@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+services/frontend_api_v2/vite.config.js
+services/frontend_api_v2/vite.config.d.ts
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Runtime storage
+runtime_storage/
+uploads/
+downloads/
+conversation_memory/
+
+# Databases and private indexes
+*.db
+*.sqlite
+*.sqlite3
+chroma_db*/
+neo4j*/
+graph_data/
+vector_backends*/
+current_backend.json
+
+# Private data
+legal_data/
+*.zip
+*.7z
+*.rar
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Secrets
+*secret*
+*password*
+*token*
+*apikey*
+*credential*
+
+# Public design-token source file
+!services/frontend_api_v2/src/styles/design-tokens.css

@@ -1,0 +1,270 @@
+/* ============================================================
+   Phase12-FE8.3.1A-BE8.3.1 Clean Evidence Pass
+   Last-loaded active frontend override: no white product surfaces.
+   ============================================================ */
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  background: var(--rt-bg-main, #0f2338);
+  color: var(--rt-text-main, #eef6ff);
+}
+
+body {
+  overflow: hidden;
+}
+
+#root,
+.product-workbench,
+.product-main-area,
+.chat-column,
+.product-chat-workspace,
+.product-chat-content {
+  background:
+    linear-gradient(145deg, rgba(10, 24, 39, 0.98), rgba(18, 43, 68, 0.97)),
+    radial-gradient(circle at 18% 10%, rgba(53, 208, 186, 0.10), transparent 28%),
+    radial-gradient(circle at 78% 16%, rgba(214, 173, 94, 0.10), transparent 30%);
+  color: var(--rt-text-main, #eef6ff);
+}
+
+.product-workbench {
+  background-color: var(--rt-bg-main, #0f2338);
+}
+
+.product-sidebar,
+.product-conversation-rail,
+.product-rail-header,
+.be8-connection-badge,
+.product-chat-header,
+.product-artifact-drawer,
+.product-artifact-tabs,
+.product-artifact-content,
+.report-center-side,
+.workspace-panel,
+.workspace-hero,
+.workspace-report-preview,
+.agent-summary-card,
+.agent-card,
+.agent-runtime-card,
+.kg-filter-panel,
+.kg-detail-panel,
+.kg-canvas,
+.report-job-card,
+.risk-overview-card,
+.risk-category-item,
+.risk-detail-panel,
+.di-method,
+.di-rules,
+.di-upload-status,
+.di-current-files {
+  border-color: var(--rt-border-soft, rgba(148, 180, 220, 0.22));
+  background: var(--rt-bg-panel, rgba(23, 48, 75, 0.92));
+  color: var(--rt-text-secondary, #b8c9dc);
+  box-shadow: 0 18px 48px rgba(4, 12, 24, 0.30);
+}
+
+.product-conversation-item,
+.product-quick-task-card,
+.product-badge,
+.material-ready-card,
+.intake-summary-card,
+.chat-bubble,
+.product-uploaded-files,
+.report-boundary-chip,
+.report-card-metrics span,
+.kg-type-chip,
+.kg-detail-row,
+.di-file-row {
+  border-color: var(--rt-border-soft, rgba(148, 180, 220, 0.22));
+  background: var(--rt-bg-card, rgba(25, 54, 84, 0.86));
+  color: var(--rt-text-secondary, #b8c9dc);
+}
+
+.product-conversation-item:hover,
+.product-conversation-item.active,
+.product-quick-task-card:hover,
+.report-job-card.active {
+  border-color: var(--rt-border-gold, rgba(214, 173, 94, 0.35));
+  background: var(--rt-bg-card-hover, rgba(34, 72, 110, 0.92));
+}
+
+.product-logo-mark {
+  border-color: var(--rt-border-gold, rgba(214, 173, 94, 0.35));
+  background: linear-gradient(135deg, #193654, #284b70);
+  color: var(--rt-accent-gold, #d6ad5e);
+}
+
+.product-main-area {
+  grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0;
+  overflow: hidden;
+}
+
+.chat-column {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.product-chat-content {
+  padding-bottom: 18px;
+}
+
+.product-chat-header {
+  background: rgba(18, 43, 68, 0.88);
+  backdrop-filter: blur(14px);
+}
+
+.chat-bubble {
+  background: rgba(24, 52, 82, 0.90);
+  box-shadow: 0 16px 40px rgba(3, 10, 20, 0.24);
+}
+
+.chat-bubble.assistant {
+  border-color: rgba(148, 180, 220, 0.26);
+  background:
+    linear-gradient(145deg, rgba(27, 58, 89, 0.94), rgba(19, 42, 67, 0.94));
+}
+
+.chat-bubble.system,
+.chat-bubble.tool {
+  background: rgba(68, 57, 30, 0.34);
+}
+
+.chat-bubble-content,
+.chat-bubble-content h1,
+.chat-bubble-content h2,
+.chat-bubble-content h3,
+.chat-bubble-content strong,
+.product-chat-title,
+.product-rail-title,
+.product-conversation-title,
+.product-welcome-panel h1,
+.product-quick-task-title,
+.workspace-hero h2,
+.workspace-panel h3,
+.report-job-card strong,
+.kg-detail-row strong {
+  color: var(--rt-text-main, #eef6ff);
+}
+
+.chat-bubble-content li,
+.product-welcome-subtitle,
+.product-quick-task-desc,
+.workspace-hero p,
+.workspace-panel p,
+.report-job-card span,
+.kg-detail-row span {
+  color: var(--rt-text-secondary, #b8c9dc);
+}
+
+.product-composer-wrapper {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  padding: 14px 24px 24px;
+  background:
+    linear-gradient(to top, rgba(10, 24, 39, 0.99) 0%, rgba(13, 31, 50, 0.96) 62%, rgba(13, 31, 50, 0.60) 86%, transparent 100%);
+  box-shadow: 0 -18px 42px rgba(4, 12, 24, 0.28);
+}
+
+.product-chat-composer {
+  width: calc(100% - 48px);
+  max-width: var(--composer-max-width, 900px);
+  padding: 12px;
+  border: 1px solid rgba(148, 180, 220, 0.24);
+  border-radius: 18px;
+  background: rgba(15, 35, 56, 0.92);
+  box-shadow: 0 22px 58px rgba(4, 12, 24, 0.34);
+  backdrop-filter: blur(18px);
+}
+
+.product-composer-box,
+.product-composer-textarea,
+.product-runtime-select,
+.assessment-type-selector,
+.kg-search-row input,
+.material-detail-file,
+.material-details-panel pre {
+  border-color: var(--rt-border-soft, rgba(148, 180, 220, 0.22));
+  background: var(--rt-bg-input, rgba(18, 40, 64, 0.95));
+  color: var(--rt-text-main, #eef6ff);
+}
+
+.product-composer-textarea::placeholder,
+.kg-search-row input::placeholder {
+  color: var(--rt-text-muted, #8ea6bd);
+}
+
+.product-send-btn,
+.product-run-btn.report-running,
+.product-run-btn.report-creating_job,
+.product-run-btn.report-validating {
+  background: linear-gradient(135deg, #2f78d4, #1f5fbf);
+  color: #ffffff;
+}
+
+.product-run-btn,
+.report-download-link,
+.artifact-download-link,
+.kg-canvas-controls button,
+.kg-mode-list button,
+.di-upload-btn {
+  border-color: var(--rt-border-gold, rgba(214, 173, 94, 0.35));
+  background: rgba(214, 173, 94, 0.14);
+  color: var(--rt-accent-gold, #d6ad5e);
+}
+
+.product-run-btn.report-completed,
+.material-report-status.completed,
+.material-ready-status.ready {
+  border-color: rgba(53, 208, 186, 0.34);
+  background: rgba(53, 208, 186, 0.14);
+  color: #72f0dd;
+}
+
+.product-run-btn.report-failed,
+.material-report-status.failed,
+.product-badge.danger {
+  color: #ffb4b4;
+}
+
+.be8-connection-badge span {
+  background: rgba(18, 40, 64, 0.82);
+  color: var(--rt-text-secondary, #b8c9dc);
+}
+
+.be8-connection-badge .ok {
+  color: #72f0dd;
+}
+
+.kg-network-canvas,
+.kg-proof-strip {
+  background:
+    linear-gradient(145deg, rgba(20, 43, 68, 0.94), rgba(10, 24, 39, 0.96));
+}
+
+.report-view,
+.json-preview {
+  border-color: var(--rt-border-soft, rgba(148, 180, 220, 0.22));
+  background: rgba(13, 30, 49, 0.95);
+  color: var(--rt-text-main, #eef6ff);
+}
+
+@media (max-width: 800px) {
+  .product-chat-header,
+  .product-chat-composer,
+  .chat-column .product-chat-messages,
+  .chat-column [data-testid="chat-hero"] {
+    width: calc(100% - 24px);
+  }
+
+  .product-composer-wrapper {
+    padding: 12px 12px 18px;
+  }
+}
